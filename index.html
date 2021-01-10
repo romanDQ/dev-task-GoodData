@@ -1,0 +1,109 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" type="text/css" href="fonts/SS Standard/webfonts/ss-standard.css">
+  <link rel="stylesheet" type="text/css" href="fonts/SS Standard/webfonts/ss-standard.ttf">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+  <title>GoodData</title>
+</head>
+
+<body>
+  <header>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <img class="logo" src="img/logo.PNG" alt="logo">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"></a>
+        <div class="collapse navbar-collapse">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <div class="dropdown">
+              <li class="nav-item dropdown">
+                <a>GoodJobs <i class="ss-icon">&#xF501;</i></a>
+              </li>
+            </div>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Dashboards</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Reports</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Manage</a>
+            </li>
+
+            <ul class="block-menu">
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="ss-icon">&#x2709;</i>Support</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#"><i class="ss-icon">&#x1F464;</i>John Appleseed</a>
+              </li>
+            </ul>
+          </ul>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div class="sidenav">
+    <a href="#"><i class="ss-icon">&#xE9A0;</i></a>
+    <a href="#"><i class="ss-icon">&#xE570;</i></a>
+    <a href="#"><i class="ss-icon">&#xE672;</i></a>
+    <a href="#"><i class="ss-icon">&#x1F464;</i></a>
+    <a href="#"><i class="ss-icon">&#x2699;</i></a>
+  </div>
+
+  <section class="topic">
+    <div>Segmentation</div>
+  </section>
+
+  <section class="graph">
+    <div>
+      <img src="img/graph.PNG" alt="graph">
+    </div>
+  </section>
+
+  <section class="table-grid">
+    <div class="options">
+      <div class="filter">
+        <li>select all</li>
+        <li>- top 5</li>
+        <li> - none</li>
+      </div>
+      <button class="export-btn">Export</button>
+    </div>
+
+    <table class="table table-striped">
+      <thead>
+        <tr>
+          <th scope="col">movie title</th>
+          <th scope="col">genre</th>
+          <th scope="col">dist</th>
+          <th scope="col">rel date</th>
+          <th scope="col">total score</th>
+          <th scope="col">cumul. gross</th>
+          <th scope="col">locs at opening</th>
+        </tr>
+      </thead>
+      <tbody id="movieData">
+      </tbody>
+      <tfoot>
+        <tr>
+          <th scope="col">388 records</th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+          <th scope="col"></th>
+          <th scope="col">54.7</th>
+          <th scope="col">23,231,170</th>
+          <th scope="col">1,231</th>
+        </tr>
+      </tfoot>
+    </table>
+  </section>
+  <footer></footer>
+</body>
+
+<script src="app.js"></script>
+</html>
